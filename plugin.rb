@@ -1,1 +1,1 @@
-register_asset "app.js", :server_side
+register_asset "app.js"
