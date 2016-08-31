@@ -52,6 +52,26 @@
 // 	document.getElementsByClassName('d-header').style.display = 'visible';
 // };
 
-(function($) {
-	console.log('This is a sample plugin');
-})(jQuery);
+// Discourse.TopicView.reopen({
+// 	didInsertElement : function(){
+// 		this._super();
+// 		Ember.run.scheduleOnce('afterRender', this, this.afterRenderEvent);
+// 	},
+// 	afterRenderEvent : function(){
+// 		console.log('inside discourse topicview');
+// 		document.getElementsByTagName('html')[0].style['overflow-y'] = 'hidden'
+// 		document.getElementsByTagName('html')[0].style['background-color'] = '#FCFCFC'
+// 		document.getElementsByClassName('d-header')[0].style['background-color'] = "#FCFCFC"
+// 		document.getElementsByClassName('d-header')[0].style['box-shadow'] = 'none'
+// 		document.getElementsByClassName('d-header')[0].getElementsByClassName('title')[0].style['display']='none'
+// 	}
+// });
+
+(function(){
+	console.log('this is the dom');
+		document.getElementsByTagName('html')[0].style['overflow-y'] = 'hidden'
+		document.getElementsByTagName('html')[0].style['background-color'] = '#FCFCFC'
+		document.getElementsByClassName('d-header')[0].style['background-color'] = "#FCFCFC"
+		document.getElementsByClassName('d-header')[0].style['box-shadow'] = 'none'
+		document.getElementsByClassName('d-header')[0].getElementsByClassName('title')[0].style['display']='none'
+})();
