@@ -67,16 +67,24 @@
 // 	}
 // });
 
-(function(){
-setTimeout(function(){
-	console.log('this is the dom');
-	document.getElementsByTagName('html')[0].style['overflow-y'] = 'hidden';
-	document.getElementsByTagName('html')[0].style['background-color'] = '#FCFCFC';
-	document.getElementsByClassName('d-header')[0].style['background-color'] = "#FCFCFC";
-	document.getElementsByClassName('d-header')[0].style['box-shadow'] = 'none';
-	document.getElementsByClassName('d-header')[0].getElementsByClassName('title')[0].style['display']='none';
-},5000);
-})();
+// (function(){
+// setTimeout(function(){
+// 	console.log('this is the dom');
+// 	document.getElementsByTagName('html')[0].style['overflow-y'] = 'hidden';
+// 	document.getElementsByTagName('html')[0].style['background-color'] = '#FCFCFC';
+// 	document.getElementsByClassName('d-header')[0].style['background-color'] = "#FCFCFC";
+// 	document.getElementsByClassName('d-header')[0].style['box-shadow'] = 'none';
+// 	document.getElementsByClassName('d-header')[0].getElementsByClassName('title')[0].style['display']='none';
+// },5000);
+// })();
+
+$(document).ready(function(){
+	$('html')[0].style['overflow-y'] = 'hidden';
+	$('html')[0].style['background-color'] = '#FCFCFC';
+	$('.d-header')[0].style['background-color'] = "#FCFCFC";
+	$('.d-header')[0].style['box-shadow'] = 'none';
+	$('.d-header .title')[0].style.display = "none"
+});
 
 // setTimeout(function(){
 // 	console.log('this is the dom');
